@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+project(show)
+find_package(OpenCV REQUIRED)
+add_executable(showp src/showp.cpp)
+target_link_libraries(showp ${OpenCV_LIBS})
